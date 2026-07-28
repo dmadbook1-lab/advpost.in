@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #F97316;         /* primary orange */
+  --accent-2: #FB923C;
+  --accent-soft: #FFF3E8;
+  --ink: #1E1B4B;            /* deep navy for headings */
+  --ink-2: #2A2660;
+  --navy: #1E1B4B;
+  --navy-2: #14113A;
+  --muted: #6B6B85;
+  --muted-2: #9A9AB2;
+  --line: #ECECF3;
+  --bg-soft: #F5F5FB;
+  --success: #16A34A;
+  --wa: #25D366;
+}
+
+html, body { background: #ffffff; color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+.section { padding-top: 96px; padding-bottom: 96px; }
+.container-x { max-width: 1240px; margin-left: auto; margin-right: auto; padding-left: 24px; padding-right: 24px; }
+
+.phone-frame { border-radius: 40px; background: #111; padding: 8px; box-shadow: 0 30px 60px -20px rgba(30,27,75,0.35), 0 12px 30px -12px rgba(30,27,75,0.20); }
+.phone-screen { border-radius: 32px; background: #ffffff; overflow: hidden; position: relative; }
+
+.card-soft { box-shadow: 0 20px 40px -18px rgba(30,27,75,0.18), 0 6px 16px -6px rgba(30,27,75,0.10); }
+
+.dot-grid { background-image: radial-gradient(rgba(30,27,75,0.08) 1px, transparent 1px); background-size: 22px 22px; }
+
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: #EA6A0F; }
+.btn-navy { background: var(--navy); color: #fff; }
+.btn-navy:hover { background: var(--navy-2); }
+
+/* Hero orange curved wave under phones */
+.hero-wave {
+  position: absolute;
+  right: -40px;
+  top: 40px;
+  width: 720px;
+  height: 620px;
+  background: var(--accent);
+  border-radius: 45% 55% 60% 40% / 55% 45% 55% 45%;
+  transform: rotate(-8deg);
+  z-index: 0;
+  filter: drop-shadow(0 30px 40px rgba(249,115,22,0.25));
+}
